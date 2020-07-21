@@ -1,1 +1,42 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#header #header-img {
+  width: 10%
+}
+.nav-link {
+  display: inline-block !important;
+}
 
+#video-container {
+  padding: 10%;
+  text-align: center;
+}
+#form {
+  width: 100%;
+  text-align: center;
+  padding: 5% 20%;
+}
+#form #email {
+  width: 30%;
+  display: inline-block;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  }
+  #header #header-img {
+    width: 30%;  
+  }  
+  .nav-link {
+    display: block !important;
+    width: 100vw;
+  }
+  #video {
+    width: 320px;
+    height: 240px;
+  }
+}
